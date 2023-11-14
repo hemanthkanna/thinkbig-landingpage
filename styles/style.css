@@ -137,7 +137,6 @@ a {
 }
 
 .header-text {
-    font-family:'Times New Roman', Times, serif;
     font-weight: bolder;
     color: black;
     font-size: 35px;
@@ -295,6 +294,8 @@ a {
     color: black;
 }
 
+
+/* ---FOOTER---- */
 
 footer {
     display: flex;
