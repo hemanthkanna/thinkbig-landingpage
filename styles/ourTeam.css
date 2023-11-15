@@ -9,26 +9,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-button {
-    padding: 1.3em 3em;
-    font-size: 12px;
-    letter-spacing: 2.5px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #4285f4;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.102);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-    margin: 10px;
-}
-
-button:hover {
-    transform: scale(1.1);
-}
-
 .nav-bar {
     position: sticky;
     /* or absolute */
@@ -78,14 +58,14 @@ a {
     /* margin: 20px; */
 }
 
-.services-img-container img {
+
+.teams-img-container img {
     height: 240px;
     width: 100%;
 }
 
 .header-container {
     padding: 20px;
-    margin-bottom: 30px;
     /* box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; */
 }
 
@@ -98,136 +78,139 @@ a {
     margin: 8px 0;
 }
 
-.section-sap-grid {
-    display: grid;
-    grid-template-columns: 0.9fr 0.9fr 0.9fr 1.4fr;
-    grid-template-rows: auto;
-    gap: 1px 1px;
-    border: 1px solid whitesmoke;
-    margin: 20px 60px;
-    padding: 30px;
-    line-height: 1.5;
-    grid-template-areas:
-        "header header header image"
-        "main main main image"
-        "button button button button"
+.overview-container {
+    padding: 24px;
 }
 
-.section-header-text-box {
-    grid-area: header;
-    text-align: justify;
-}
-
-.section-content-text-box {
-    grid-area: main;
-    line-height: 2.5;
-    padding: 20px;
-}
-
-.section-image-box {
-    grid-area: image;
-    padding: 20px 40px;
-}
-
-.section-button-box {
-    grid-area: button;
-    text-align: center;
-}
-
-.section-image-box img {
-    width: 350px;
-    height: fit-content;
-    padding-top: 50px;
-}
-
-.development-section {
+.box {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
-    border: 1px solid whitesmoke;
-}
-
-.text-box {
-    text-align: justify;
-    padding: 30px;
-}
-
-.service-container {
-    display: flex;
-    flex-direction: row;
-    padding: 20px 60px;
-    align-items: center;
-}
-
-.service-container img {
-    width: 400px;
-    height: auto;
-}
-
-.service-container p {
-    line-height: 1.4;
-    text-align: justify;
-}
-
-.app-service-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    padding: 0 60px;
-}
-
-.card {
-    width: 500px;
-    height: auto;
-    display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px;
+    border: 1px solid whitesmoke;
+}
+
+.overview-text-container {
+    padding: 16px;
+}
+
+.overview-text {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+}
+
+.model-box {
+    width: 90%;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
-.card img {
-    width: 50%;
-    height: auto;
-    padding: 20px;
+.model-box img {
+    width: 70%;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px;
 }
 
-.card p {
-    line-height: 28px;
-    padding: 20px;
+.model-box h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.model-box p {
     text-align: justify;
 }
 
-.app-service-button {
+section h2 {
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
-.mobile-box-grid {
+.team-engagement-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    align-items: stretch;
     justify-items: center;
 }
 
-.mobile-card {
+.team-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
+    border: 1px solid whitesmoke;
+    background-color: #ddd;
 }
 
-.mobile-card img {
-    width: 40%;
+.team-card img {
+    width: 100%;
     padding: 10px;
     margin: 20px;
 }
 
-.mobile-card p {
+.team-card p {
     line-height: 28px;
     padding: 20px;
     text-align: justify;
+}
+
+.red-text {
+    color: red;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+figure {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 20px;
+}
+
+figure img {
+    width: 30%;
+}
+
+blockquote {
+    text-align: justify;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+
+figure:hover {
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+figcaption h4 {
+    text-align: center;
 }
 
 /* ---FOOTER---- */

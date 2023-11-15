@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,12 +10,13 @@ body {
 }
 
 .nav-bar {
-    position: sticky; /* or absolute */
+    position: sticky;
+    /* or absolute */
     top: 0;
     left: 0;
     right: 0;
     background-color: white;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +50,7 @@ a {
     color: black;
 }
 
-.about-img-container img{
+.about-img-container img {
     width: 100%;
 }
 
@@ -59,7 +60,7 @@ a {
 }
 
 .header-text {
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     color: black;
     font-size: 45px;
@@ -69,7 +70,7 @@ a {
 
 .about-main-container {
     display: grid;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -81,7 +82,7 @@ a {
     padding: 30px 50px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 20px;
-    margin:20px 80px;
+    margin: 20px 80px;
 }
 
 .about-main-text {
@@ -99,7 +100,7 @@ a {
 
 .service-value-grid {
     display: grid;
-    grid-template-columns: repeat(4,300px);
+    grid-template-columns: repeat(4, 300px);
     align-items: center;
     row-gap: 40px;
     justify-items: center;
@@ -117,9 +118,9 @@ a {
     width: 30%;
 }
 
-.engagement-model-container{
+.engagement-model-container {
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -134,8 +135,8 @@ a {
     align-items: center;
     justify-content: center;
     padding: 30px 50px;
-    margin:20px 80px;  
-    background-color: rgb(217, 210, 210); 
+    margin: 20px 80px;
+    background-color: rgb(217, 210, 210);
 }
 
 .engagement-model-text {
@@ -151,26 +152,26 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color:rgba(33,33,33,0.92);
+    background-color: rgba(33, 33, 33, 0.92);
     color: white;
     padding: 30px 0;
 }
 
-.footer-nav-bar-links ul{
+.footer-nav-bar-links ul {
     line-height: 2;
     padding: 24px;
     font-weight: 600;
     margin-left: 60px;
 }
 
-.footer-nav-bar-links ul li a{
+.footer-nav-bar-links ul li a {
     color: white;
 }
 
 .footer-contact {
     display: flex;
     flex-direction: column;
-    align-items:stretch;
+    align-items: stretch;
     row-gap: 10px;
 }
 
@@ -180,7 +181,7 @@ footer {
     margin-bottom: 8px;
 }
 
-.contact-links a{
+.contact-links a {
     color: white;
-    padding-right:10px;
+    padding-right: 10px;
 }
