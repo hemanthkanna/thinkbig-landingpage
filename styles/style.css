@@ -7,6 +7,12 @@
 body {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    width: 100vw;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
 }
 
 button {
@@ -205,16 +211,12 @@ a {
     font-size: 16px;
 }
 
+
 .slider-grid {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
     padding: 30px;
-}
-
-.client-img {
-    margin: 10px 50px;
+    gap: 40px;
 }
 
 .model-grid {
@@ -258,7 +260,7 @@ a {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .technology-box img {
@@ -320,7 +322,6 @@ footer {
     line-height: 2;
     padding: 24px;
     font-weight: 600;
-    margin-left: 60px;
 }
 
 .footer-nav-bar-links ul li a {
