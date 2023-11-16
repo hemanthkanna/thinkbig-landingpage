@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/contact.css">
     <title>Contact Us</title>
 </head>
+
 <body>
     <div class="container">
         <header class="nav-bar">
@@ -23,7 +25,7 @@
                     <li><a href="careers.html">Carrers</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
-            </div>  
+            </div>
         </header>
 
         <div class="contact-img-container">
@@ -34,71 +36,45 @@
             <h2 class="header-text">Contact Us</h2>
         </div>
 
-        <section class="map-section">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7774.158413854155!2d80.2379692!3d13.0306279!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52674d5de002f7%3A0xc0c395e505b1e64a!2sThinkBiG%20Software%20Solutions%20PVTLTD!5e0!3m2!1sen!2sin!4v1700041770091!5m2!1sen!2sin"
-             width="600" 
-             height="450" 
-             style="border:0;" 
-             allowfullscreen="" 
-             loading="lazy" 
-             referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </section>
+        <div class="contact-map-container">
+            <section class="map-section">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7774.158413854155!2d80.2379692!3d13.0306279!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52674d5de002f7%3A0xc0c395e505b1e64a!2sThinkBiG%20Software%20Solutions%20PVTLTD!5e0!3m2!1sen!2sin!4v1700041770091!5m2!1sen!2sin"
+                    width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
 
-        <section class="form-section">
-            <form action="#" method="post">
-                <div class="input-section">
-                    <label for="firstName">First Name
-                        <input type="text" 
-                        name="firstName" 
-                        id="firstName"
-                        pattern="^[a-zA-Z]*"
-                        required
-                        autocomplete="off">
-                        <div id="firstname-error" class="error"></div>
-                    </label>
-
-                    <label for="lastName">Last Name
-                        <input type="text" 
-                        name="lastName" 
-                        id="lastName"
-                        pattern="^[a-zA-Z]*"
-                        required
-                        autocomplete="off">
-                        <div id="lastname-error" class="error"></div>
-                    </label>
-
-                    <label for="email"> Email
-                        <input type="email"
-                         name="email" 
-                         id="email"
-                         required
-                         autocomplete="off">
-                         <div id="email-error" class="error"></div>
-                    </label>
-
-                    <label for="message">Your Message
-                        <input type="text"
-                         name="message" 
-                         id="message"
-                         required
-                         autocomplete="off">
-                         <div id="message-error" class="error"></div>
-                    </label>
-                    <label for="resume">Resume
-                        <input type="file"
-                         name="resume" 
-                         id="resume"
-                         required>
-                         <div id="resume-error" class="error"></div>
-                    </label>
-                </div>
-
-                <div class="sumit-section">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-        </section>
+            <section class="form-section">
+                <form action="#" method="post">
+                    <div class="input-section">
+                        <label for="firstName">First Name
+                            <input type="text" name="firstName" id="firstName" pattern="^[a-zA-Z]*" required autocomplete="off">
+                            <div id="firstname-error" class="error"></div>
+                        </label>
+        
+                        <label for="lastName">Last Name
+                            <input type="text" name="lastName" id="lastName" pattern="^[a-zA-Z]*" required autocomplete="off">
+                            <div id="lastname-error" class="error"></div>
+                        </label>
+        
+                        <label for="email"> Email
+                            <input type="email" name="email" id="email" required autocomplete="off">
+                            <div id="email-error" class="error"></div>
+                        </label>
+                        <label for="message">your message
+                            <textarea name="message" id="message" cols="10" rows="3"></textarea>
+                            <div id="resume-error" class="error"></div>
+                        </label>
+                    </div>
+        
+                    <div class="submit-section">
+                        <button type="submit">Submit</button>
+                        <button class="close-form">Close Form</button>
+                    </div>
+                </form>
+            </section>
+        </div>
 
         <footer>
             <div class="nav-bar-links footer-nav-bar-links">
@@ -132,4 +108,5 @@
         </footer>
     </div>
 </body>
+
 </html>

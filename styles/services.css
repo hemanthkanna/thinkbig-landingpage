@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
 }
 
@@ -45,8 +45,8 @@ button:hover {
 }
 
 .logo img {
-    width: 160px;
-    height: 60px;
+    max-width: 160px;
+    max-height: auto;
 }
 
 .nav-bar-ul li {
@@ -84,8 +84,9 @@ a {
 }
 
 .services-img-container img {
-    height: 240px;
+    max-height: 240px;
     width: 100%;
+    object-fit: cover;
 }
 
 .header-container {
@@ -140,7 +141,7 @@ a {
 }
 
 .section-image-box img {
-    width: 350px;
+    max-width: 330px;
     height: fit-content;
     padding-top: 50px;
 }
@@ -165,8 +166,8 @@ a {
 }
 
 .service-container img {
-    width: 400px;
-    height: auto;
+    max-width: 400px;
+    max-height: auto;
 }
 
 .service-container p {
@@ -183,7 +184,7 @@ a {
 }
 
 .card {
-    width: 500px;
+    max-width: 500px;
     height: auto;
     display: flex;
     align-items: center;
@@ -192,7 +193,7 @@ a {
 }
 
 .card img {
-    width: 50%;
+    max-width: 50%;
     height: auto;
     padding: 20px;
 }
@@ -224,7 +225,7 @@ a {
 }
 
 .mobile-card img {
-    width: 40%;
+    max-width: 40%;
     padding: 10px;
     margin: 20px;
 }
