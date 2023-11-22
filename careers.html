@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/careers.css">
+    <link rel="stylesheet" href="styles/reuse.css">
+    <script defer src="/scripts/careers.js"></script>
     <title>Careers</title>
 </head>
 
@@ -40,7 +42,7 @@
 
         <section class="job-post-section">
             <div class="resume-btn-box">
-                <button class="resume-btn">Submit Resume</button>
+                <button data-modal-target="#modal" class="resume-btn">Submit Resume</button>
             </div>
 
             <div class="job-post-conatiner">
@@ -52,39 +54,75 @@
             </div>
         </section>
 
-        <section class="form-section">
-            <form action="#" method="post">
-                <div class="input-section">
-                    <label for="firstName">First Name
-                        <input type="text" name="firstName" id="firstName" pattern="^[a-zA-Z]*" required autocomplete="off">
-                        <div id="firstname-error" class="error"></div>
-                    </label>
-    
-                    <label for="lastName">Last Name
-                        <input type="text" name="lastName" id="lastName" pattern="^[a-zA-Z]*" required autocomplete="off">
-                        <div id="lastname-error" class="error"></div>
-                    </label>
-    
-                    <label for="email"> Email
-                        <input type="email" name="email" id="email" required autocomplete="off">
-                        <div id="email-error" class="error"></div>
-                    </label>
-    
-                    <label for="role">Role Applying for
-                        <input type="text" name="role" id="role" required autocomplete="off">
-                        <div id="role-error" class="error"></div>
-                    </label>
-                    <label for="resume">Resume
-                        <input type="file" name="resume" id="resume" required>
-                        <div id="resume-error" class="error"></div>
-                    </label>
+        <section class="form-section" id="modal">
+            <div class="form-container">
+                <div class="modal-header">
+                    <h3>Carrers Info</h3>
+                    <button data-close-button class="close-form">&times;</button>
                 </div>
-    
-                <div class="submit-section">
-                    <button type="submit">Submit</button>
-                    <button class="close-form">Close Form</button>
-                </div>
-            </form>
+                <!-- <form action="/scripts/careers.js" method="post"> -->
+                <form>
+                    <div class="input-section">
+                        <label for="firstName">First Name
+                            <input 
+                                type="text" 
+                                name="firstName" 
+                                id="firstName" 
+                                pattern="^[a-zA-Z]*" 
+                                required 
+                                autocomplete="off"
+                            >
+                            <div id="firstname-error" class="error"></div>
+                        </label>
+        
+                        <label for="lastName">Last Name
+                            <input 
+                                type="text" 
+                                name="lastName" 
+                                id="lastName" 
+                                pattern="^[a-zA-Z]*" 
+                                required autocomplete="off"
+                            >
+                            <div id="lastname-error" class="error"></div>
+                        </label>
+        
+                        <label for="email"> Email
+                            <input 
+                            type="email" 
+                            name="email" 
+                            id="email"
+                            pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"
+                            required autocomplete="off"
+                            >
+                            <div id="email-error" class="error"></div>
+                        </label>
+        
+                        <label for="role">Role Applying for
+                            <input 
+                                type="text" 
+                                name="role" id="role"  
+                                pattern="^[a-zA-Z\s]*" 
+                                required autocomplete="off"
+                            >
+                            <div id="role-error" class="error"></div>
+                        </label>
+                        <label for="resume">Resume
+                            <input 
+                                type="file" 
+                                name="resume" 
+                                id="resume" 
+                                required
+                            >
+                            <div id="resume-error" class="error"></div>
+                        </label>
+                    </div>
+                    <div class="submit-section">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+
         </section>
 
         <footer>
@@ -117,6 +155,8 @@
             </div>
             <div> </div>
         </footer>
+
+        <div id="overlay" class="overlay"></div>
     </div>
 </body>
 
